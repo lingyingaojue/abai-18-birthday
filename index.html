@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>阿白不是白 · 18岁生日快乐</title>
+  <meta name="description" content="祝阿白不是白 18 岁生日快乐！" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky">
+    <div class="stars" aria-hidden="true"></div>
+    <div id="balloons" aria-hidden="true"></div>
+    <div id="confetti-container" aria-hidden="true"></div>
+  </div>
+
+  <main class="card">
+    <div class="date-badge">2026 · 08 · 28</div>
+    <h1 class="nickname">阿白不是白</h1>
+    <p class="subtitle">✨ Happy 18th Birthday ✨</p>
+
+    <div class="big-eighteen" aria-label="18">
+      <span>1</span><span>8</span>
+    </div>
+
+    <div id="countdown-panel" class="countdown-panel">
+      <p class="countdown-title">距离 18 岁生日还有</p>
+      <div class="countdown-grid">
+        <div class="unit"><span id="days">00</span><small>天</small></div>
+        <div class="unit"><span id="hours">00</span><small>时</small></div>
+        <div class="unit"><span id="minutes">00</span><small>分</small></div>
+        <div class="unit"><span id="seconds">00</span><small>秒</small></div>
+      </div>
+    </div>
+
+    <div id="birthday-panel" class="birthday-panel hidden">
+      <h2>🎉 生日快乐！🎉</h2>
+      <p class="birthday-text">
+        阿白，今天你正式 18 岁啦！<br />
+        愿你永远开心、自由、闪闪发光，<br />
+        新的一岁万事胜意，所愿皆成真！
+      </p>
+    </div>
+
+    <div class="cake" role="img" aria-label="生日蛋糕">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="candle candle-1"><span class="flame"></span></div>
+      <div class="candle candle-2"><span class="flame"></span></div>
+      <div class="candle candle-3"><span class="flame"></span></div>
+      <div class="candle candle-4"><span class="flame"></span></div>
+      <div class="candle candle-5"><span class="flame"></span></div>
+    </div>
+
+    <button id="celebrate-btn" class="celebrate-btn">🎊 点我一起庆祝</button>
+
+    <p class="footer">给你 18 岁的偏爱 · 来自你的好朋友 ❤️</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
