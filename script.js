@@ -11,16 +11,17 @@
   const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
   const celebrateBtn = document.getElementById("celebrate-btn");
+    const previewMode = new URLSearchParams(window.location.search).has("preview");
 
   function pad(n) {
     return String(n).padStart(2, "0");
   }
 
   function isBirthdayToday() {
-    const now = new Date();
-    return now.getMonth() === BIRTH_MONTH && now.getDate() === BIRTH_DAY;
-  }
-
+      if (previewMode) return true;
+      const now = new Date();
+      return now.getMonth() === BIRTH_MONTH && now.getDate() === BIRTH_DAY;
+    }
   function nextBirthday() {
     const now = new Date();
     const year = now.getFullYear();
