@@ -18,9 +18,9 @@
   }
 
   function isBirthdayToday() {
-      if (previewMode) return true;
-      const now = new Date();
-      return now.getMonth() === BIRTH_MONTH && now.getDate() === BIRTH_DAY;
+    if (previewMode) return true;
+    const now = new Date();
+    return now.getMonth() === BIRTH_MONTH && now.getDate() === BIRTH_DAY;
     }
   function nextBirthday() {
     const now = new Date();
